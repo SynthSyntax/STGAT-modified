@@ -1,8 +1,8 @@
 data: 'ntu_skeleton'
 data_param:
   train_data_param:
-    data_path: /your/path/to/NTU-RGB-D/DSTA/xsub/train_data_joint.npy
-    label_path: /your/path/to/NTU-RGB-D/DSTA/xsub/train_label.pkl
+    data_path: /kaggle/input/test-train-split-ntu-60/kaggle/tmp/ntu-out/xsub/train_data_joint.npy
+    label_path: /kaggle/input/test-train-split-ntu-60/kaggle/tmp/ntu-out/xsub/train_label.pkl
     random_choose: True
     center_choose: False
     window_size: 150
@@ -10,8 +10,8 @@ data_param:
     num_skip_frame:
     decouple_spatial: False
   val_data_param:
-    data_path: /your/path/to/NTU-RGB-D/DSTA/xsub/val_data_joint.npy
-    label_path: /your/path/to/NTU-RGB-D/DSTA/xsub/val_label.pkl
+    data_path: /kaggle/input/test-train-split-ntu-60/kaggle/tmp/ntu-out/xsub/val_data_joint.npy
+    label_path: /kaggle/input/test-train-split-ntu-60/kaggle/tmp/ntu-out/xsub/val_label.pkl
     random_choose: False
     center_choose: True
     window_size: 150
@@ -52,7 +52,7 @@ batch_size: 32
 worker: 32
 pin_memory: False
 num_epoch_per_save: 10
-model_saved_name: './work_dir/ntu60/baseline'
+model_saved_name: '/kaggle/tmp/ntu60/baseline'
 last_model:
 pre_trained_model:
 ignore_weights: ['fc']
